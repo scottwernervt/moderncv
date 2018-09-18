@@ -49,7 +49,7 @@
   \else%
     \savebox{\foottempbox}{\usebox{\footbox}#1#2}\fi%
   \settowidth{\footboxwidth}{\usebox{\foottempbox}}%
-  \ifnum\footboxwidth<\footwidth%
+  \ifdim\footboxwidth<\footwidth%
     \savebox{\footbox}{\usebox{\foottempbox}}%
     \@firstfootelementfalse%
   \else%
