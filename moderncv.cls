@@ -128,9 +128,9 @@
     bookmarksopen = true,
     bookmarksdepth= 2,% to show sections and subsections
     pdfauthor     = {\@firstname{}~\@lastname{}},
-    pdftitle      = {\@firstname{}~\@lastname{}\notblank{\@title}{ -- \@title}{}},
+    pdftitle      = {\@firstname{}~\@lastname{}\expandafter\notblank\expandafter{\@title}{ -- \@title}{}},
     pdfsubject    = {Resum\'{e} of \@firstname{}~\@lastname{}},
-    pdfkeywords   = {\@firstname{}~\@lastname{}, curriculum vit\ae{}, resum\'{e}}}}
+    pdfkeywords   = {\@firstname{}~\@lastname{}, curriculum vit\ae{}, cv, resum\'{e}, resume}}}
 
 % graphics
 \RequirePackage{graphicx}
